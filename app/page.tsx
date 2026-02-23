@@ -16,10 +16,10 @@ export default function Home() {
         <div className="rounded-lg border bg-card shadow-sm">
           <div className="p-6">
             <h2 className="text-xl font-semibold mb-4">
-              Gere um código QR para qualquer link
+              Gere um QR Code para qualquer conteúdo
             </h2>
             <p className="text-muted-foreground mb-6">
-              Insira uma URL abaixo, gere um código QR e baixe-o no formato de sua preferência.
+              Insira um link, texto, chave de acesso, credencial Wi-Fi, e-mail ou telefone — e baixe seu QR Code no formato desejado.
             </p>
             <QRCodeGenerator />
           </div>

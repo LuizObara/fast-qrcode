@@ -14,6 +14,16 @@ import {
 
 export function ModeToggle() {
   const { setTheme } = useTheme();
+  const [mounted, setMounted] = React.useState(false);
+
+  React.useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted) {
+    // Placeholder com o mesmo tamanho para evitar layout shift
+    return <Button variant="outline" size="icon" aria-label="Toggle theme" disabled />;
+  }
 
   return (
     <DropdownMenu>

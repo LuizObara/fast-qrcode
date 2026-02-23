@@ -1,5 +1,5 @@
 import './globals.css';
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import { ThemeProvider } from '@/components/theme-provider';
 
@@ -35,14 +35,17 @@ export const metadata: Metadata = {
     title: 'Gerador de QR Code — Download em SVG ou PNG',
     description: 'Transforme qualquer link em QR Code e baixe rapidamente em SVG ou PNG.',
     images: [previewImage],
-    creator: '@luizobara', 
+    creator: '@luizobara',
   },
   icons: {
     icon: '/favicon.ico',
     apple: '/apple-touch-icon.png',
   },
-  themeColor: '#ffffff',
   manifest: '/site.webmanifest',
+};
+
+export const viewport: Viewport = {
+  themeColor: '#ffffff',
 };
 
 export default function RootLayout({
